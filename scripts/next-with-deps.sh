@@ -36,4 +36,5 @@ if [ ! -z $HAS_CONFLICTING_DEP ] || [ ! -d "$PROJECT_DIR/node_modules" ];then
 fi
 
 cd $START_DIR
-pnpm next $@
+pnpm next:build $@
+pnpm next:start $@
